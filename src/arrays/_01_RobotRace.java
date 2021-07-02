@@ -20,7 +20,7 @@ public class _01_RobotRace {
 		double x = 0;
 		double y = 0;
 		int angle = 0;
-
+		y = startingY + Math.sin(angle)*150;
 		robots[0].setAngle(270);
 		robots[0].penDown();
 		robots[0].setRandomPenColor();
