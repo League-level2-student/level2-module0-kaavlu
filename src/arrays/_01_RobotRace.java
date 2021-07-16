@@ -64,12 +64,17 @@ public class _01_RobotRace {
 		}
 	}
 	public void combo() {
-		while(rob0!=72 && rob1!=72) {
-			rand0 = random.nextInt(10);
-			rand1 = random.nextInt(10);
+		while(rob0<36 && rob1<36) {
+			rand0 = random.nextInt(3);
+			rand1 = random.nextInt(3);
 			robot0(rand0);
 			robot1(rand1);
 			
+		}
+		if(rob0>rob1) {
+			System.out.println("rob 0 is the winner");
+		}else {
+			System.out.println("rob 1 is the winner");
 		}
 	}
 	public void run() {
